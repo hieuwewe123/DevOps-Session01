@@ -1,0 +1,18 @@
+Ưu điểm của Microservices
+
+Dễ scale riêng từng service theo nhu cầu thực tế.
+Các team có thể phát triển và triển khai độc lập, nhanh chóng hơn.
+Độc lập công nghệ (polyglot): mỗi service có thể dùng ngôn ngữ hoặc framework phù hợp.
+Fault isolation: lỗi ở một service không làm sập toàn bộ hệ thống.
+Dễ thay thế hoặc cập nhật từng phần mà không ảnh hưởng các phần khác.
+Phù hợp với tổ chức lớn, đội ngũ nhiều người.
+
+Nhược điểm và Thách thức của Microservices
+
+Độ phức tạp cao: cần thêm nhiều công cụ như API Gateway, Service Discovery, CI/CD, Monitoring, Logging, Distributed Tracing.
+Độ trễ mạng (network latency): các service gọi nhau qua mạng nên chậm hơn so với gọi trong cùng một process.
+Khó đảm bảo tính nhất quán dữ liệu (data consistency). Thường phải chấp nhận eventual consistency thay vì strong consistency.
+Vận hành và debugging rất khó khăn vì lỗi có thể xảy ra ở nhiều service khác nhau.
+Chi phí hạ tầng và vận hành cao hơn nhiều so với Monolith.
+Yêu cầu đội ngũ DevOps và kinh nghiệm cao. Không phù hợp với đội ngũ nhỏ hoặc startup giai đoạn đầu.
+Dễ rơi vào tình trạng “Distributed Monolith” – hình thức microservices nhưng vẫn phức tạp và chặt chẽ như monolith cũ.

@@ -1,0 +1,23 @@
+Danh sách 8 Module chính của Shopee
+Dưới đây là 8 module chính, mỗi module chịu trách nhiệm một khả năng kinh doanh rõ ràng, không chồng chéo:
+
+User Management Service
+Quản lý thông tin người dùng, đăng ký, đăng nhập, hồ sơ cá nhân, địa chỉ, voucher cá nhân và quản lý tài khoản (Buyer & Seller).
+Product Catalog Service
+Quản lý danh mục sản phẩm, thông tin chi tiết sản phẩm, tìm kiếm, lọc sản phẩm, khuyến mãi sản phẩm và quản lý kho hàng cơ bản của người bán.
+Order Management Service
+Xử lý toàn bộ vòng đời đơn hàng: tạo đơn, chỉnh sửa đơn, hủy đơn, theo dõi trạng thái đơn hàng và lịch sử mua hàng.
+Payment Service
+Xử lý tất cả các phương thức thanh toán (COD, thẻ tín dụng, ví ShopeePay, chuyển khoản, trả góp…), hoàn tiền và quản lý giao dịch tài chính.
+Shipping & Logistics Service
+Tích hợp vận chuyển, tính phí ship, chọn đơn vị vận chuyển, theo dõi vận đơn, quản lý kho trung chuyển và xử lý hoàn trả hàng.
+Seller Management Service
+Quản lý tài khoản người bán, đăng sản phẩm, quản lý cửa hàng, chương trình khuyến mãi của shop, báo cáo doanh thu và thống kê bán hàng.
+Promotion & Voucher Service
+Quản lý tất cả các chương trình khuyến mãi, mã giảm giá, flash sale, voucher shop, voucher nền tảng và điều kiện áp dụng.
+Notification Service
+Gửi thông báo đẩy (push notification), email, tin nhắn cho người dùng về trạng thái đơn hàng, khuyến mãi, tin nhắn chat, và các thông báo hệ thống.
+
+Kết luận
+Việc phân rã theo Business Capability giúp mỗi module có trách nhiệm rõ ràng, giảm chồng chéo chức năng và dễ dàng scale độc lập.
+Các module này có thể giao tiếp với nhau qua API hoặc Event-Driven để đảm bảo luồng nghiệp vụ liền mạch (ví dụ: Order Service gọi Payment Service và Shipping Service).

@@ -1,0 +1,38 @@
+Phân loại Sub-Domain của Shopee
+1. Core Domain (Lõi cốt lõi – Tạo nên sự khác biệt của Shopee)
+Những phần này quyết định lợi thế cạnh tranh và trải nghiệm người dùng chính của Shopee:
+
+Product Search & Recommendation
+Hệ thống tìm kiếm thông minh và gợi ý sản phẩm cá nhân hóa (đây là yếu tố then chốt giúp người dùng dễ tìm và mua hàng).
+Promotion & Voucher Engine
+Hệ thống khuyến mãi, flash sale, voucher nền tảng và các chương trình giảm giá lớn (điểm nổi bật mạnh của Shopee).
+Order Management & Checkout Flow
+Quy trình đặt hàng và thanh toán mượt mà, nhanh chóng, tối ưu tỷ lệ chuyển đổi.
+
+2. Supporting Domain (Hỗ trợ – Cần thiết nhưng không tạo khác biệt lớn)
+Những module hỗ trợ trực tiếp cho Core Domain nhưng không phải là điểm khác biệt chiến lược:
+
+Seller Management Service
+Quản lý shop, đăng sản phẩm, quản lý kho của người bán.
+Product Catalog Service
+Quản lý thông tin và danh mục sản phẩm.
+Shipping & Logistics Service
+Tính phí vận chuyển, theo dõi đơn hàng, tích hợp đơn vị giao hàng.
+Payment Service
+Xử lý các phương thức thanh toán (dù quan trọng nhưng phần lớn dùng giải pháp bên thứ ba).
+
+3. Generic Domain (Chung chung – Có thể mua ngoài hoặc dùng giải pháp sẵn)
+Những phần mà hầu hết các hệ thống đều có, không cần tự xây từ đầu:
+
+User Management & Authentication
+Đăng ký, đăng nhập, quản lý tài khoản người dùng.
+Notification Service
+Gửi push notification, email, tin nhắn (có thể dùng Firebase, OneSignal, AWS SNS…).
+Review & Rating System
+Đánh giá sản phẩm và người bán.
+Chat Service (nếu có)
+Hệ thống chat giữa người mua và người bán (có thể dùng giải pháp bên thứ ba như CometChat hoặc tự xây đơn giản).
+
+Kết luận
+Theo tư duy DDD, Shopee nên ưu tiên nguồn lực cao nhất cho Core Domain (Search & Recommendation, Promotion Engine, Checkout Flow) vì đây là những gì tạo nên sự khác biệt và lợi thế cạnh tranh.
+Supporting Domain cần đầu tư vừa phải để hỗ trợ tốt cho Core. Còn Generic Domain nên tận dụng giải pháp sẵn có hoặc mua ngoài để tiết kiệm thời gian và chi phí, tránh lãng phí nguồn lực vào những phần không tạo giá trị chiến lược.

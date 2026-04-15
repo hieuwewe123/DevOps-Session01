@@ -1,0 +1,24 @@
+1. Tại sao việc chọn kiến trúc là bước sống còn?
+Vì kiến trúc phần mềm là “nền móng” của toàn bộ hệ thống.
+Chọn kiến trúc đúng giúp hệ thống dễ mở rộng, dễ bảo trì và giảm chi phí dài hạn. Ngược lại, chọn sai sẽ dẫn đến technical debt lớn, khó scale, tốn kém sửa chữa sau này, thậm chí khiến dự án thất bại dù ý tưởng tốt.
+2. Các loại kiến trúc phần mềm phổ biến
+
+Monolithic Architecture: Toàn bộ ứng dụng nằm trong một khối duy nhất. Ưu điểm: phát triển nhanh, phù hợp MVP. Nhược điểm: khó scale.
+Microservices Architecture: Chia thành nhiều service nhỏ, độc lập. Dễ scale, dễ bảo trì nhưng phức tạp hơn.
+Layered Architecture (N-Tier): Phân chia thành các tầng rõ ràng (UI, Business, Data). Dễ quản lý và bảo trì.
+
+3. Các thuộc tính chất lượng (Quality Attributes)
+
+Scalability: Khả năng mở rộng khi số lượng người dùng tăng.
+Availability: Hệ thống sẵn sàng hoạt động cao (ít downtime).
+Maintainability: Dễ sửa chữa, cập nhật tính năng mới.
+Performance: Tốc độ phản hồi nhanh.
+Reliability: Độ tin cậy, ít lỗi.
+Security: Bảo mật dữ liệu và hệ thống.
+Testability: Dễ viết test.
+
+Mối quan hệ giữa kiến trúc tốt và thành công dự án:
+Kiến trúc tốt giúp đạt được các thuộc tính chất lượng cao → hệ thống bền vững, chi phí thấp, dễ phát triển lâu dài.
+Startup nên bắt đầu với Monolithic cho nhanh, nhưng thiết kế modular để sau này dễ chuyển sang Microservices khi cần mở rộng.
+Kết luận:
+Chọn kiến trúc đúng từ đầu là yếu tố quyết định sự sống còn và thành công lâu dài của startup.

@@ -1,0 +1,47 @@
+Cách 1: Phân rã theo Business Capability (theo đơn vị kinh doanh)
+Tách theo các khả năng kinh doanh độc lập:
+
+User Management Service – Quản lý tài khoản, đăng nhập, profile, follow.
+Video Management Service – Upload video, chỉnh sửa, lưu trữ, quản lý thư viện video.
+Feed Service – Xây dựng và phân phối feed (For You Page & Following).
+Interaction Service – Like, comment, share, duet, stitch, save video.
+Recommendation & Algorithm Service – Thuật toán gợi ý video (For You).
+Advertising Service – Quản lý quảng cáo, campaign, targeting.
+Live Streaming Service – Livestream, gift, tương tác thời gian thực.
+Monetization Service – Thanh toán, rút tiền, creator fund, bán hàng.
+
+Cách 2: Phân rã theo Sub-domain (tư duy DDD)
+Phân loại theo giá trị chiến lược:
+Core Domain (Tạo sự khác biệt chính của TikTok):
+
+Recommendation & Algorithm (For You Page)
+Video Feed & Discovery
+Content Personalization
+
+Supporting Domain (Hỗ trợ Core nhưng không phải điểm khác biệt):
+
+Video Management & Storage
+Interaction (Like, Comment, Share, Duet)
+Live Streaming
+Advertising & Monetization
+
+Generic Domain (Có thể dùng giải pháp sẵn hoặc mua ngoài):
+
+User Management & Authentication
+Notification Service
+Video Transcoding & Processing
+Search Service
+Analytics & Reporting
+
+So sánh: Cách nào giúp team phát triển nhanh hơn?
+Business Capability giúp team phát triển nhanh hơn trong thực tế vì:
+
+Mỗi module rõ ràng theo chức năng kinh doanh → team dễ hiểu, dễ phân công, ít chồng chéo.
+Dễ scale độc lập (ví dụ: team Feed làm riêng, team Ads làm riêng).
+Phù hợp với tổ chức lớn, nhiều squad hoạt động song song.
+
+Sub-domain (DDD) sâu sắc hơn về mặt chiến lược nhưng thường chậm hơn ở giai đoạn đầu vì phải dành nhiều thời gian workshop domain, định nghĩa Ubiquitous Language và Bounded Context.
+Kết luận & Khuyến nghị:
+Với TikTok (hệ thống dữ liệu cực lớn và thay đổi nhanh), nên kết hợp cả hai:
+Dùng Business Capability để chia module chính (dễ triển khai và scale), sau đó áp dụng DDD sâu vào Core Domain (Recommendation & Feed) để tối ưu thuật toán – phần tạo ra lợi thế cạnh tranh lớn nhất.
+Cách này mang lại tính linh hoạt cao nhất cho một hệ thống có hàng tỷ video và hàng trăm triệu người dùng.

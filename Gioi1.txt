@@ -1,0 +1,21 @@
+1. Ưu điểm của Domain-Driven Design (DDD)
+
+Gắn kết chặt chẽ giữa nghiệp vụ và code: DDD giúp code phản ánh đúng logic kinh doanh (business logic) thay vì chỉ là kỹ thuật. Core domain được thiết kế rõ ràng, dễ hiểu.
+Ngôn ngữ chung – Ubiquitous Language: Toàn bộ team (dev, BA, Product Owner, Domain Expert) dùng chung một ngôn ngữ. Giảm hiểu lầm giữa nghiệp vụ và lập trình.
+Tập trung vào phần quan trọng nhất: DDD phân biệt rõ Core Domain (phần cốt lõi tạo lợi thế cạnh tranh), Supporting Domain và Generic Domain → ưu tiên nguồn lực cho phần quan trọng nhất.
+Dễ bảo trì và mở rộng dài hạn: Code được tổ chức theo nghiệp vụ (Bounded Context, Aggregates, Entities, Value Objects) nên khi thay đổi yêu cầu kinh doanh, việc sửa code trở nên dễ dàng và ít rủi ro hơn.
+Giảm Big Ball of Mud: Giúp codebase sạch sẽ, có cấu trúc rõ ràng thay vì hỗn loạn.
+
+2. Nhược điểm và Khó khăn khi áp dụng DDD
+
+Đường cong học tập cao: DDD có nhiều khái niệm phức tạp (Bounded Context, Ubiquitous Language, Aggregate, Domain Event, Repository, Anti-Corruption Layer…). Team mất khá nhiều thời gian để nắm vững.
+Tốn thời gian hội thảo nghiệp vụ: Cần tổ chức nhiều buổi workshop với Domain Expert để làm rõ ngôn ngữ chung và mô hình domain → tốn công sức và thời gian ban đầu.
+Không phù hợp với mọi dự án: Với dự án đơn giản, CRUD đơn giản thì DDD sẽ làm code phức tạp và nặng nề không cần thiết (over-engineering).
+Yêu cầu đội ngũ có kinh nghiệm: Cần cả dev giỏi kỹ thuật lẫn hiểu biết về business. Nếu team thiếu Domain Expert hoặc kinh nghiệm, việc áp dụng DDD dễ thất bại.
+Tốn thời gian phát triển ban đầu: DDD làm giai đoạn đầu chậm hơn so với cách code truyền thống.
+
+Kết luận
+Domain-Driven Design không chỉ là kỹ thuật, mà là tư duy tập trung vào logic cốt lõi của doanh nghiệp.
+DDD rất mạnh khi dự án có domain phức tạp, thay đổi thường xuyên và cần sự chính xác cao về nghiệp vụ. Tuy nhiên, nó không phải là giải pháp vạn năng.
+Khuyến nghị:
+Trước khi áp dụng DDD, đội ngũ nên đánh giá mức độ phức tạp của domain. Nếu dự án đang là “Big Ball of Mud”, có thể bắt đầu bằng cách áp dụng DDD chỉ cho Core Domain trước, thay vì áp dụng toàn bộ hệ thống ngay lập tức.
